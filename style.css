@@ -14,7 +14,16 @@
   --accent-2: #9d4edd; /* Neon Purple */
   --accent-gradient: linear-gradient(135deg, var(--accent-1), var(--accent-2));
   --accent-shadow: rgba(0, 242, 254, 0.2);
+  --shadow-primary: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
   --terminal-bg: #070a12;
+  --terminal-header-bg: rgba(0, 0, 0, 0.25);
+  --terminal-tab-inactive-bg: rgba(0, 0, 0, 0.15);
+  --terminal-body-color: #cbd5e1;
+  --terminal-prompt-color: #a78bfa;
+  --terminal-cmd-color: #38bdf8;
+  --terminal-output-color: #9ca3af;
+  --summary-box-bg: rgba(0, 0, 0, 0.2);
+  --badge-bg: rgba(255, 255, 255, 0.05);
   --header-bg: rgba(10, 14, 23, 0.8);
   --input-bg: rgba(17, 24, 39, 0.8);
   --timeline-line: rgba(255, 255, 255, 0.1);
@@ -35,7 +44,16 @@
   --accent-2: #8b5cf6; /* Indigo */
   --accent-gradient: linear-gradient(135deg, var(--accent-1), var(--accent-2));
   --accent-shadow: rgba(14, 165, 233, 0.15);
-  --terminal-bg: #0f172a;
+  --shadow-primary: 0 10px 30px -15px rgba(0, 0, 0, 0.1);
+  --terminal-bg: #ffffff;
+  --terminal-header-bg: #e2e8f0;
+  --terminal-tab-inactive-bg: #f1f5f9;
+  --terminal-body-color: #334155;
+  --terminal-prompt-color: #7c3aed;
+  --terminal-cmd-color: #0284c7;
+  --terminal-output-color: #475569;
+  --summary-box-bg: rgba(0, 0, 0, 0.03);
+  --badge-bg: rgba(0, 0, 0, 0.04);
   --header-bg: rgba(248, 250, 252, 0.8);
   --input-bg: rgba(255, 255, 255, 0.9);
   --timeline-line: rgba(0, 0, 0, 0.1);
@@ -538,7 +556,7 @@ h1, h2, h3, h4 {
 
 .terminal-header {
   height: 40px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--terminal-header-bg);
   display: flex;
   align-items: center;
   padding-inline: 15px;
@@ -568,7 +586,7 @@ h1, h2, h3, h4 {
   font-size: 0.85rem;
   line-height: 1.6;
   overflow-y: auto;
-  color: #d1d5db;
+  color: var(--terminal-body-color);
 }
 
 .terminal-line {
@@ -576,15 +594,15 @@ h1, h2, h3, h4 {
 }
 
 .terminal-prompt {
-  color: #a78bfa;
+  color: var(--terminal-prompt-color);
 }
 
 .cmd-text {
-  color: #38bdf8;
+  color: var(--terminal-cmd-color);
 }
 
 .terminal-output {
-  color: var(--text-secondary);
+  color: var(--terminal-output-color);
   margin-bottom: 15px;
   padding-left: 10px;
   border-left: 2px solid var(--card-border);
@@ -872,7 +890,7 @@ h1, h2, h3, h4 {
 }
 
 .project-terminal-header {
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--terminal-header-bg);
   padding: 12px 20px;
   display: flex;
   align-items: center;
@@ -935,7 +953,7 @@ h1, h2, h3, h4 {
 /* Interactive Tabs Nav */
 .project-tab-nav {
   display: flex;
-  background: rgba(0, 0, 0, 0.15);
+  background: var(--terminal-tab-inactive-bg);
   border-bottom: 1px solid var(--card-border);
 }
 
@@ -954,7 +972,7 @@ h1, h2, h3, h4 {
 
 .tab-btn:hover {
   color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--badge-bg);
 }
 
 .tab-btn.active {
@@ -977,7 +995,7 @@ h1, h2, h3, h4 {
   background-color: var(--terminal-bg);
   padding: 24px;
   min-height: 250px;
-  color: #cbd5e1;
+  color: var(--terminal-body-color);
 }
 
 .tab-panel {
@@ -1009,7 +1027,7 @@ h1, h2, h3, h4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--summary-box-bg);
   border: 1px solid var(--card-border);
   border-radius: 8px;
   padding: 16px;
@@ -1072,7 +1090,7 @@ h1, h2, h3, h4 {
 .stack-badges .badge {
   font-family: 'Fira Code', monospace;
   font-size: 0.8rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--badge-bg);
   border: 1px solid var(--card-border);
   color: var(--text-secondary);
   padding: 4px 10px;
@@ -1094,7 +1112,7 @@ h1, h2, h3, h4 {
 }
 
 .code-line {
-  color: #cbd5e1;
+  color: var(--terminal-body-color);
 }
 
 .cmd-cyan { color: var(--code-cyan); }
@@ -1333,6 +1351,12 @@ h1, h2, h3, h4 {
 @media (max-width: 768px) {
   .section {
     padding-block: 60px;
+  }
+
+  .hero-section {
+    padding-top: 110px !important;
+    min-height: auto;
+    align-items: flex-start;
   }
 
   .hero-title {
