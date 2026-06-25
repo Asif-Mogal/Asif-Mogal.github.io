@@ -12,7 +12,7 @@
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=1.2">
+  <link rel="stylesheet" href="style.css?v=1.3">
 </head>
 <body>
 
@@ -159,7 +159,7 @@
                 <span class="stat-label">Internships Completed</span>
               </div>
               <div class="stat-box">
-                <span class="stat-num text-gradient">2+</span>
+                <span class="stat-num text-gradient">3</span>
                 <span class="stat-label">Production-Ready Projects</span>
               </div>
             </div>
@@ -556,7 +556,121 @@
               </div>
             </div>
           </div>
-          
+
+          <!-- Project 3: SyncBoard -->
+          <div class="project-widget card" id="project-syncboard">
+            <div class="project-terminal-header">
+              <div class="terminal-buttons">
+                <div class="terminal-dot red"></div>
+                <div class="terminal-dot yellow"></div>
+                <div class="terminal-dot green"></div>
+              </div>
+              <span class="project-tab-title"><i class="fa-solid fa-palette"></i> syncboard.java</span>
+              <div class="project-links">
+                <a href="https://github.com/Asif-Mogal" target="_blank" rel="noopener noreferrer" title="View Codebase" class="proj-link-btn">
+                  <i class="fa-brands fa-github"></i> Source
+                </a>
+                <a href="https://sync-board-mauve.vercel.app" target="_blank" rel="noopener noreferrer" title="Live Site" class="proj-link-btn live">
+                  <i class="fa-solid fa-globe"></i> Live Demo
+                </a>
+              </div>
+            </div>
+            
+            <!-- Tab Navigation Inside Card -->
+            <div class="project-tab-nav">
+              <button class="tab-btn active" data-tab="syncboard-overview">Overview</button>
+              <button class="tab-btn" data-tab="syncboard-features">Key Features</button>
+              <button class="tab-btn" data-tab="syncboard-stack">Tech Stack</button>
+              <button class="tab-btn" data-tab="syncboard-setup">Local Setup</button>
+            </div>
+
+            <!-- Tab Panels Content -->
+            <div class="project-tab-content font-mono">
+              
+              <!-- Panel 1: Overview -->
+              <div class="tab-panel active" id="syncboard-overview">
+                <div class="panel-content-standard">
+                  <h3 class="panel-title">// SyncBoard — Collaborative Whiteboard</h3>
+                  <p>SyncBoard is a premium, low-latency, real-time collaborative drawing whiteboard application. Multiple users can join a shared session using a 6-digit room code, draw freehand and vector shapes, view live mouse cursors labeled with usernames, undo stroke transactions, and persist their workspaces permanently.</p>
+                  <div class="project-summary-box">
+                    <div class="summary-item"><strong>Backend:</strong> Spring Boot 3.3, Java 21</div>
+                    <div class="summary-item"><strong>Real-time:</strong> WebSockets, STOMP, Redis</div>
+                    <div class="summary-item"><strong>Frontend:</strong> React 19, HTML5 Canvas</div>
+                    <div class="summary-item"><strong>DB Type:</strong> PostgreSQL</div>
+                  </div>
+                  <p class="text-secondary">Click the tabs above to explore features, specific technologies used, and CLI command instructions to launch locally.</p>
+                </div>
+              </div>
+
+              <!-- Panel 2: Features -->
+              <div class="tab-panel" id="syncboard-features">
+                <ul class="panel-list">
+                  <li><span class="list-bullet">&gt;</span> <strong>Real-Time Collaboration:</strong> Dynamic synchronizations of drawing strokes and shape vectors powered by Spring Boot WebSockets and Redis Pub/Sub.</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>Active Cursors Overlay:</strong> Floating, custom-colored indicators showing peer cursors in real-time, throttled to 35ms to optimize network bandwidth.</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>High-DPI Canvas Rendering:</strong> Scaled drawing context mapping to logical 1920x1080 dimensions using the browser's devicePixelRatio to prevent blurry lines on Retina/4K screens.</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>Smart Shape Fills:</strong> Supports Pen (freehand), Line, Rectangle, and Circle vector tools. Rectangles and circles feature a premium 25% transparent fill toggle matching the stroke color.</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>Transactional Undo:</strong> A single click on the Undo button erases the entire line drawn between pressing the mouse down and releasing it (rather than tiny segment pixels).</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>Session Management:</strong> Active users sidebar. A SessionDisconnectEvent listener automatically clears active users in Redis if they close the tab.</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>Workspace Exporter & Saving:</strong> Export clean, high-resolution .png downloads with slate-900 backgrounds, or commit transient workspaces to PostgreSQL.</li>
+                </ul>
+              </div>
+
+              <!-- Panel 3: Stack -->
+              <div class="tab-panel" id="syncboard-stack">
+                <div class="stack-grid">
+                  <div class="stack-grid">
+                    <div class="stack-category">
+                      <span class="stack-label">Backend & WS:</span>
+                      <div class="stack-badges">
+                        <span class="badge">Java 21</span>
+                        <span class="badge">Spring Boot 3.3</span>
+                        <span class="badge">Spring WebSocket (STOMP)</span>
+                        <span class="badge">SockJS</span>
+                      </div>
+                    </div>
+                    <div class="stack-category">
+                      <span class="stack-label">Caching & DB:</span>
+                      <div class="stack-badges">
+                        <span class="badge">Redis (Pub/Sub)</span>
+                        <span class="badge">Embedded Redis Server</span>
+                        <span class="badge">PostgreSQL</span>
+                        <span class="badge">Spring Data JPA</span>
+                      </div>
+                    </div>
+                    <div class="stack-category">
+                      <span class="stack-label">Frontend:</span>
+                      <div class="stack-badges">
+                        <span class="badge">React 19</span>
+                        <span class="badge">Vite 5</span>
+                        <span class="badge">HTML5 Canvas API</span>
+                        <span class="badge">Lucide React</span>
+                        <span class="badge">Vanilla CSS</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 4: Setup -->
+              <div class="tab-panel" id="syncboard-setup">
+                <div class="code-terminal">
+                  <div class="code-comment"># 1. Start local PostgreSQL and create database</div>
+                  <div class="code-line"><span class="cmd-cyan">CREATE DATABASE</span> syncboard;</div>
+                  
+                  <div class="code-comment"># 2. Navigate to backend, build and run using Maven</div>
+                  <div class="code-comment"># (No need to install Redis; an embedded server starts automatically on port 6379)</div>
+                  <div class="code-line"><span class="cmd-green">cd</span> backend</div>
+                  <div class="code-line"><span class="cmd-cyan">mvn</span> spring-boot:run</div>
+                  
+                  <div class="code-comment"># 3. Navigate to frontend, install dependencies & run (port: 5173)</div>
+                  <div class="code-line"><span class="cmd-green">cd</span> ../frontend</div>
+                  <div class="code-line"><span class="cmd-cyan">npm</span> install</div>
+                  <div class="code-line"><span class="cmd-cyan">npm</span> run dev</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

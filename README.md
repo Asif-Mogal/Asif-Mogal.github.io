@@ -13,7 +13,7 @@ This website is styled with a premium **Developer IDE/Terminal Theme** featuring
 - **Dynamic Theme Mode**: Smooth toggling between Light and Dark mode using custom CSS variables (default: Dark Mode).
 - **Floating Background Glows**: Slow-drifting blurred radial gradients that provide a state-of-the-art glassmorphic depth effect.
 - **Terminal Simulator**: Typewriter coding animations in the Hero section reflecting my development domains.
-- **IDE Project Tabs**: Interactive terminal widgets for **Shopsphere** and **MockMate** that allow users to select tabs (`Overview`, `Features`, `Tech Stack`, `Setup`) directly in the UI.
+- **IDE Project Tabs**: Interactive terminal widgets for **Shopsphere**, **MockMate**, and **SyncBoard** that allow users to select tabs (`Overview`, `Features`, `Tech Stack`, `Setup`) directly in the UI.
 - **Functional Contact Form**: Direct AJAX emailing powered by **Web3Forms** (with Formspree and local `mailto:` fallbacks).
 
 ---
