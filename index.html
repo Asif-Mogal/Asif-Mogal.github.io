@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Asif Mogal - Aspiring Software Developer specializing in React, Spring Boot, FastAPI, and AI Integrations.">
+  <title>Asif Mogal | Aspiring Software Developer Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Background Glows -->
+  <div class="glow-bg">
+    <div class="glow-sphere glow-1"></div>
+    <div class="glow-sphere glow-2"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar-header">
+    <div class="container navbar-container">
+      <a href="#home" class="logo">
+        <span class="logo-tag">&lt;</span>AsifMogal<span class="logo-tag">/&gt;</span>
+      </a>
+      
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Internships</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Switch -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light/dark theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="home" class="section hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-accent">Available for Opportunities</div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Asif Mogal</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            I am an <span id="typewriter" class="typewriter-text"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            B.Tech Computer Science graduate specializing in building robust backends with Spring Boot & FastAPI and modern frontends with React. Passionate about AI integrations, microservices, and crafting high-performance, clean code.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Let's Connect</span>
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/Asif-Mogal" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/asif-mogal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:mogalasif2003@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+916302656221" aria-label="Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-terminal">
+          <div class="terminal-header">
+            <div class="terminal-dot red"></div>
+            <div class="terminal-dot yellow"></div>
+            <div class="terminal-dot green"></div>
+            <span class="terminal-title">asif@portfolio: ~</span>
+          </div>
+          <div class="terminal-body font-mono">
+            <div class="terminal-line">
+              <span class="terminal-prompt">asif@portfolio:~$</span> <span class="cmd-text">cat intro.txt</span>
+            </div>
+            <div class="terminal-output">
+              I'm a Computer Science graduate with a strong academic record (CGPA: 9.53/10.0). I love creating software solutions that solve real-world problems.
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">asif@portfolio:~$</span> <span class="cmd-text">curl -s https://api.github.com/users/Asif-Mogal | jq .location</span>
+            </div>
+            <div class="terminal-output">
+              "Bangalore, India"
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">asif@portfolio:~$</span> <span class="cmd-text">node -v && mvn -v</span>
+            </div>
+            <div class="terminal-output">
+              v18.16.0<br>Apache Maven 3.9.1 (Java 21)
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">asif@portfolio:~$</span> <span class="cmd-text">python -c "print('Let\'s build something awesome!')"</span>
+            </div>
+            <div class="terminal-output text-accent">
+              Let's build something awesome!
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">asif@portfolio:~$</span> <span class="cursor-blink">_</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title text-center">About <span class="text-gradient">Me</span></h2>
+        <div class="section-divider"></div>
+        
+        <div class="about-grid">
+          <div class="about-info card">
+            <h3>Who I Am</h3>
+            <p>
+              I am an aspiring Software Developer who recently graduated with a Bachelor of Technology in Computer Science and Engineering from B.S. Abdur Rahman Crescent Institute of Science and Technology. My passion lies in constructing scalable backend systems, responsive user interfaces, and integrating modern AI services into web platforms.
+            </p>
+            <p>
+              My academic journey has equipped me with strong foundations in Data Structures and Algorithms, Object-Oriented Programming, and database systems. I thrive in collaborative environments and enjoy building end-to-end full stack projects.
+            </p>
+            <div class="about-stats">
+              <div class="stat-box">
+                <span class="stat-num text-gradient">9.53</span>
+                <span class="stat-label">CGPA (B.Tech CSE)</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num text-gradient">2+</span>
+                <span class="stat-label">Internships Completed</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num text-gradient">2+</span>
+                <span class="stat-label">Production-Ready Projects</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-education card">
+            <h3>Education & Credentials</h3>
+            <div class="education-timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-header">
+                  <span class="timeline-date">2020</span>
+                  <h4>Secondary School Certificate (Class X CBSE)</h4>
+                </div>
+                <p class="timeline-inst">Little Angels Public School</p>
+                <p class="timeline-desc">Gudur, Andhra Pradesh • Score: 95.0% (475 / 500)</p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-header">
+                  <span class="timeline-date">2020 - 2022</span>
+                  <h4>Intermediate (MPC - Maths, Physics, Chemistry)</h4>
+                </div>
+                <p class="timeline-inst">Viswasai Junior College</p>
+                <p class="timeline-desc">Nellore, Andhra Pradesh • Score: 97.5% (975 / 1000) • A Grade</p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-header">
+                  <span class="timeline-date">2022 - 2026</span>
+                  <h4>B.Tech in Computer Science & Engineering</h4>
+                </div>
+                <p class="timeline-inst">B.S. Abdur Rahman Crescent Institute of Science & Technology</p>
+                <p class="timeline-desc">Chennai, India • CGPA: 9.53 / 10.0 (First Class with Distinction)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2 class="section-title text-center">Technical <span class="text-gradient">Skills</span></h2>
+        <div class="section-divider"></div>
+
+        <div class="skills-grid">
+          <!-- Languages Card -->
+          <div class="skills-card card">
+            <div class="skills-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Languages</h3>
+            <div class="skills-tags">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <!-- Frontend Card -->
+          <div class="skills-card card">
+            <div class="skills-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Frontend</h3>
+            <div class="skills-tags">
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Vite</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- Backend Card -->
+          <div class="skills-card card">
+            <div class="skills-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>Backend</h3>
+            <div class="skills-tags">
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">Spring Security</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">REST APIs</span>
+            </div>
+          </div>
+
+          <!-- Databases Card -->
+          <div class="skills-card card">
+            <div class="skills-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Databases</h3>
+            <div class="skills-tags">
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">SQLite</span>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms Card -->
+          <div class="skills-card card">
+            <div class="skills-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Tools & DevOps</h3>
+            <div class="skills-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">Swagger / OpenAPI</span>
+              <span class="skill-tag">Maven</span>
+              <span class="skill-tag">VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <h2 class="section-title text-center">Internship <span class="text-gradient">Experience</span></h2>
+        <div class="section-divider"></div>
+
+        <div class="experience-timeline">
+          <!-- Internship 1 -->
+          <div class="experience-card card">
+            <div class="exp-badge">Jun 2025 - Jul 2025</div>
+            <div class="exp-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="exp-details">
+              <h3>AI & Machine Learning Intern</h3>
+              <h4 class="text-gradient">Edunet Foundation (AICTE Internship Program)</h4>
+              <ul class="exp-points">
+                <li>Worked on machine learning workflows involving data preprocessing, model training, and evaluation parameters.</li>
+                <li>Applied Python, Pandas, NumPy, and Scikit-learn for predictive analytics and exploratory data analysis projects.</li>
+                <li>Gained practical knowledge in selecting appropriate model architectures and hyperparameter tuning for optimization.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Internship 2 -->
+          <div class="experience-card card">
+            <div class="exp-badge">Oct 2025 - Dec 2025</div>
+            <div class="exp-icon"><i class="fa-brands fa-python"></i></div>
+            <div class="exp-details">
+              <h3>Python Technologies Intern</h3>
+              <h4 class="text-gradient">Infosys Springboard (Virtual Internship 6.0)</h4>
+              <ul class="exp-points">
+                <li>Completed rigorous project-based training focused on Python programming, object-oriented concepts, and robust software design principles.</li>
+                <li>Applied structural problem-solving methods to code efficiency, algorithmic execution, and testing procedures.</li>
+                <li>Developed modular modules using clean-coding guidelines to promote reusability and scalability.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title text-center">Featured <span class="text-gradient">Projects</span></h2>
+        <div class="section-divider"></div>
+
+        <div class="projects-container">
+          
+          <!-- Project 1: Shopsphere -->
+          <div class="project-widget card" id="project-shopsphere">
+            <div class="project-terminal-header">
+              <div class="terminal-buttons">
+                <div class="terminal-dot red"></div>
+                <div class="terminal-dot yellow"></div>
+                <div class="terminal-dot green"></div>
+              </div>
+              <span class="project-tab-title"><i class="fa-solid fa-laptop-code"></i> shopsphere.java</span>
+              <div class="project-links">
+                <a href="https://github.com/Asif-Mogal" target="_blank" rel="noopener noreferrer" title="View Codebase" class="proj-link-btn">
+                  <i class="fa-brands fa-github"></i> Source
+                </a>
+                <a href="https://shopsphere-ktdc.onrender.com" target="_blank" rel="noopener noreferrer" title="Live Site" class="proj-link-btn live">
+                  <i class="fa-solid fa-globe"></i> Live Demo
+                </a>
+              </div>
+            </div>
+            
+            <!-- Tab Navigation Inside Card -->
+            <div class="project-tab-nav">
+              <button class="tab-btn active" data-tab="shopsphere-overview">Overview</button>
+              <button class="tab-btn" data-tab="shopsphere-features">Key Features</button>
+              <button class="tab-btn" data-tab="shopsphere-stack">Tech Stack</button>
+              <button class="tab-btn" data-tab="shopsphere-setup">Local Setup</button>
+            </div>
+
+            <!-- Tab Panels Content -->
+            <div class="project-tab-content font-mono">
+              
+              <!-- Panel 1: Overview -->
+              <div class="tab-panel active" id="shopsphere-overview">
+                <div class="panel-content-standard">
+                  <h3 class="panel-title">// Shopsphere — Full Stack E-Commerce Platform</h3>
+                  <p>Shopsphere is a modern full-stack e-commerce application featuring a highly secure and optimized Spring Boot REST API backend and a responsive React frontend, serving a fluid client-server architecture.</p>
+                  <div class="project-summary-box">
+                    <div class="summary-item"><strong>Backend:</strong> Spring Boot 3.x, JPA</div>
+                    <div class="summary-item"><strong>Frontend:</strong> React 19, Vite, CSS</div>
+                    <div class="summary-item"><strong>DB Type:</strong> MySQL</div>
+                    <div class="summary-item"><strong>Deployment:</strong> Single-Unit JAR Build</div>
+                  </div>
+                  <p class="text-secondary">Click the tabs above to explore features, specific technologies used, and CLI command instructions to launch locally.</p>
+                </div>
+              </div>
+
+              <!-- Panel 2: Features -->
+              <div class="tab-panel" id="shopsphere-features">
+                <ul class="panel-list">
+                  <li><span class="list-bullet">&gt;</span> <strong>User Authentication:</strong> JWT-based login, signup, and role-based access controls (Customer vs. Admin).</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>Product Catalog:</strong> Dynamic sorting, search filters, and categories in responsive grid layout.</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>Ratings & Reviews:</strong> Customers can view specs, average star reviews, and submit ratings and comments.</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>Cart & Checkout:</strong> Quantity edits and unified 2-step checkout flow collecting shipping details.</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>Admin Control Panel:</strong> Complete CRUD operations on catalog, alongside interactive order status dashboard.</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>API Docs:</strong> Live interactive Swagger/OpenAPI specifications.</li>
+                </ul>
+              </div>
+
+              <!-- Panel 3: Stack -->
+              <div class="tab-panel" id="shopsphere-stack">
+                <div class="stack-grid">
+                  <div class="stack-category">
+                    <span class="stack-label">Backend:</span>
+                    <div class="stack-badges">
+                      <span class="badge">Java 21</span>
+                      <span class="badge">Spring Boot 3.x</span>
+                      <span class="badge">Spring Data JPA</span>
+                      <span class="badge">Spring Security</span>
+                      <span class="badge">JWT</span>
+                      <span class="badge">Lombok</span>
+                    </div>
+                  </div>
+                  <div class="stack-category">
+                    <span class="stack-label">Frontend:</span>
+                    <div class="stack-badges">
+                      <span class="badge">React 19</span>
+                      <span class="badge">Vite</span>
+                      <span class="badge">Axios</span>
+                      <span class="badge">React Router</span>
+                      <span class="badge">React Hot Toast</span>
+                      <span class="badge">Vanilla CSS</span>
+                    </div>
+                  </div>
+                  <div class="stack-category">
+                    <span class="stack-label">Database & Ops:</span>
+                    <div class="stack-badges">
+                      <span class="badge">MySQL</span>
+                      <span class="badge">Render Cloud</span>
+                      <span class="badge">Maven</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 4: Setup -->
+              <div class="tab-panel" id="shopsphere-setup">
+                <div class="code-terminal">
+                  <div class="code-comment"># 1. Start MySQL database and create base db</div>
+                  <div class="code-line"><span class="cmd-cyan">CREATE DATABASE</span> shopsphere;</div>
+                  
+                  <div class="code-comment"># 2. Build and launch Backend REST API (port: 8080)</div>
+                  <div class="code-line"><span class="cmd-green">cd</span> backend</div>
+                  <div class="code-line"><span class="cmd-green">set</span> SPRING_DATASOURCE_URL=jdbc:mysql://localhost:3306/shopsphere</div>
+                  <div class="code-line"><span class="cmd-green">set</span> SPRING_DATASOURCE_USERNAME=root</div>
+                  <div class="code-line"><span class="cmd-green">set</span> SPRING_DATASOURCE_PASSWORD=yourpassword</div>
+                  <div class="code-line"><span class="cmd-cyan">mvn</span> spring-boot:run</div>
+                  
+                  <div class="code-comment"># 3. Start Frontend Dev Server (port: 5173)</div>
+                  <div class="code-line"><span class="cmd-green">cd</span> ../frontend</div>
+                  <div class="code-line"><span class="cmd-cyan">npm</span> install</div>
+                  <div class="code-line"><span class="cmd-cyan">npm</span> run dev</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: MockMate -->
+          <div class="project-widget card" id="project-mockmate">
+            <div class="project-terminal-header">
+              <div class="terminal-buttons">
+                <div class="terminal-dot red"></div>
+                <div class="terminal-dot yellow"></div>
+                <div class="terminal-dot green"></div>
+              </div>
+              <span class="project-tab-title"><i class="fa-solid fa-brain"></i> mockmate.py</span>
+              <div class="project-links">
+                <a href="https://github.com/Asif-Mogal" target="_blank" rel="noopener noreferrer" title="View Codebase" class="proj-link-btn">
+                  <i class="fa-brands fa-github"></i> Source
+                </a>
+                <a href="https://mock-mate-drab.vercel.app" target="_blank" rel="noopener noreferrer" title="Live Site" class="proj-link-btn live">
+                  <i class="fa-solid fa-globe"></i> Live Demo
+                </a>
+              </div>
+            </div>
+            
+            <!-- Tab Navigation Inside Card -->
+            <div class="project-tab-nav">
+              <button class="tab-btn active" data-tab="mockmate-overview">Overview</button>
+              <button class="tab-btn" data-tab="mockmate-features">Key Features</button>
+              <button class="tab-btn" data-tab="mockmate-stack">Tech Stack</button>
+              <button class="tab-btn" data-tab="mockmate-setup">Local Setup</button>
+            </div>
+
+            <!-- Tab Panels Content -->
+            <div class="project-tab-content font-mono">
+              
+              <!-- Panel 1: Overview -->
+              <div class="tab-panel active" id="mockmate-overview">
+                <div class="panel-content-standard">
+                  <h3 class="panel-title">// MockMate — AI Mock Interview Platform</h3>
+                  <p>MockMate is an advanced AI-powered mock interview platform designed to help developers prepare for technical interviews. By generating context-specific technical questions, evaluation models output feedback, scores, and ideal answers powered by Gemini APIs.</p>
+                  <div class="project-summary-box">
+                    <div class="summary-item"><strong>Backend:</strong> FastAPI (Python)</div>
+                    <div class="summary-item"><strong>AI Core:</strong> Gemini 2.5 Flash API</div>
+                    <div class="summary-item"><strong>Frontend:</strong> React, Tailwind CSS</div>
+                    <div class="summary-item"><strong>DB Type:</strong> PostgreSQL</div>
+                  </div>
+                  <p class="text-secondary">Click the tabs above to explore features, specific technologies used, and CLI command instructions to launch locally.</p>
+                </div>
+              </div>
+
+              <!-- Panel 2: Features -->
+              <div class="tab-panel" id="mockmate-features">
+                <ul class="panel-list">
+                  <li><span class="list-bullet">&gt;</span> <strong>Token Authentication:</strong> Secure onboarding, signup, and login flows validated using JWT bearer tokens.</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>Customizable Sessions:</strong> Configure interview runs choosing topics (e.g., SQL, Java) and difficulty settings.</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>Interactive Simulated Console:</strong> Answer questions in a distraction-free, structured technical interface.</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>Gemini AI Evaluations:</strong> Generates constructive critiques, lists of strengths/weaknesses, and actionable recommendations.</li>
+                  <li><span class="list-bullet">&gt;</span> <strong>Ideal Sample Answers:</strong> Provides model answers alongside primary keywords for performance matching.</li>
+                </ul>
+              </div>
+
+              <!-- Panel 3: Stack -->
+              <div class="tab-panel" id="mockmate-stack">
+                <div class="stack-grid">
+                  <div class="stack-category">
+                    <span class="stack-label">Backend & AI:</span>
+                    <div class="stack-badges">
+                      <span class="badge">FastAPI (Python)</span>
+                      <span class="badge">SQLAlchemy (ORM)</span>
+                      <span class="badge">Gemini 2.5 Flash</span>
+                      <span class="badge">Pydantic</span>
+                      <span class="badge">JWT</span>
+                    </div>
+                  </div>
+                  <div class="stack-category">
+                    <span class="stack-label">Frontend:</span>
+                    <div class="stack-badges">
+                      <span class="badge">React</span>
+                      <span class="badge">Vite</span>
+                      <span class="badge">Tailwind CSS</span>
+                      <span class="badge">Axios</span>
+                      <span class="badge">React Router</span>
+                    </div>
+                  </div>
+                  <div class="stack-category">
+                    <span class="stack-label">Database & Web:</span>
+                    <div class="stack-badges">
+                      <span class="badge">PostgreSQL</span>
+                      <span class="badge">Vercel Deploy</span>
+                      <span class="badge">Uvicorn</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 4: Setup -->
+              <div class="tab-panel" id="mockmate-setup">
+                <div class="code-terminal">
+                  <div class="code-comment"># 1. Set up python virtual environment & dependencies</div>
+                  <div class="code-line"><span class="cmd-green">cd</span> backend</div>
+                  <div class="code-line"><span class="cmd-cyan">python</span> -m venv venv</div>
+                  <div class="code-line"><span class="cmd-green">.\venv\Scripts\activate</span> <span class="code-comment"># On Windows</span></div>
+                  <div class="code-line"><span class="cmd-cyan">pip</span> install -r requirements.txt</div>
+                  
+                  <div class="code-comment"># 2. Configure environment variables in backend/.env</div>
+                  <div class="code-line">DATABASE_URL=postgresql://user:pass@host:5432/db</div>
+                  <div class="code-line">GEMINI_API_KEY=your_gemini_api_key</div>
+                  <div class="code-line">JWT_SECRET_KEY=secure_random_hash</div>
+                  
+                  <div class="code-comment"># 3. Launch backend API server (port: 8000)</div>
+                  <div class="code-line"><span class="cmd-cyan">uvicorn</span> app.main:app --reload</div>
+
+                  <div class="code-comment"># 4. Install frontend dependencies & run frontend (port: 5173)</div>
+                  <div class="code-line"><span class="cmd-green">cd</span> ../frontend</div>
+                  <div class="code-line"><span class="cmd-cyan">npm</span> install</div>
+                  <div class="code-line"><span class="cmd-cyan">npm</span> run dev</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title text-center">Get In <span class="text-gradient">Touch</span></h2>
+        <div class="section-divider"></div>
+
+        <div class="contact-grid">
+          <div class="contact-info card">
+            <h3>Contact Details</h3>
+            <p>I am looking for internship and entry-level developer positions. Feel free to reach out via email, phone, or connect with me on social platforms.</p>
+            
+            <div class="contact-methods">
+              <a href="mailto:mogalasif2003@gmail.com" class="method-item">
+                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="method-details">
+                  <span class="method-label">Email</span>
+                  <span class="method-value">mogalasif2003@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+916302656221" class="method-item">
+                <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="method-details">
+                  <span class="method-label">Phone</span>
+                  <span class="method-value">+91 6302656221</span>
+                </div>
+              </a>
+
+              <div class="method-item">
+                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="method-details">
+                  <span class="method-label">Location</span>
+                  <span class="method-value">Bangalore, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social-bar">
+              <a href="https://github.com/Asif-Mogal" target="_blank" rel="noopener noreferrer" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/asif-mogal" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-container card">
+            <h3>Send a Message</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <input type="text" id="form-name" required placeholder=" ">
+                <label for="form-name">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="form-email" required placeholder=" ">
+                <label for="form-email">Your Email</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="form-subject" required placeholder=" ">
+                <label for="form-subject">Subject</label>
+              </div>
+              <div class="form-group">
+                <textarea id="form-message" rows="5" required placeholder=" "></textarea>
+                <label for="form-message">Your Message</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+              </button>
+              <div id="form-status" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Asif Mogal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
